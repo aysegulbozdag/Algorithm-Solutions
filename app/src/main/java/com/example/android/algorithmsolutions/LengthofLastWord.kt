@@ -6,17 +6,17 @@ fun lengthOfLastWord(s: String): Int {
 
     var lastWord = words.last()
 
-    for (i in words.size-1 downTo 0){
+    for (i in words.size - 1 downTo 0) {
         if (words[i].isNotEmpty()) {
             lastWord = words[i]
             break
         }
     }
-println(lastWord.length)
+
     return lastWord.length
 }
 
 
-fun main(){
-lengthOfLastWord(" fly me   to   the moon  ")
+fun main() {
+    lengthOfLastWord(" fly me   to   the moon  ")
 }

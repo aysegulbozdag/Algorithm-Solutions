@@ -8,7 +8,7 @@ fun addDigits(num: Int): Int {
     }
     while (num > 0) {
         digitalRoot += num % 10
-        num = num / 10
+        num /= 10
         if (num === 0 && digitalRoot > 9) {
             num = digitalRoot
             digitalRoot = 0
@@ -19,7 +19,6 @@ fun addDigits(num: Int): Int {
 
 
 }
-
 
 
 fun sumDigit(num: Int): Int {
