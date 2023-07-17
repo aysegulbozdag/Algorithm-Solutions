@@ -13,11 +13,16 @@ fun containsDuplicate(nums: Array<Int>): Boolean {
     return false
 }
 
+fun containsDuplicateBestPractice(nums: Array<Int>): Boolean {
+    return (nums.size != nums.toSet().size)
+}
+
 
 fun main() {
 
-    val a: Array<Int> = arrayOf(1, 2, 3, 5, 5, 5)
-    containsDuplicate(a)
+    val nums: Array<Int> = arrayOf(1, 2, 3, 5, 5, 5)
+    containsDuplicate(nums)
+    containsDuplicateBestPractice(nums)
 
 
 }
