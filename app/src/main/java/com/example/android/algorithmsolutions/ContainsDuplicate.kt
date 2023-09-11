@@ -1,5 +1,7 @@
 package com.example.android.algorithmsolutions
 
+import java.util.HashSet
+
 
 fun containsDuplicate(nums: Array<Int>): Boolean {
     val hs = HashSet<Int>()
