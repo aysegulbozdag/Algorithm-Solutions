@@ -20,14 +20,13 @@ fun SnakeCase(str: String): String {
     var newStr =" "
 
     for(i in str){
-        /*if(i.toString() == " " || i.toString() == "*" || i.toString() == "-")
+        if(i.toString() != "" || i.toString() == "*" || i.toString() == "-")
+            newStr += "_"
+        else
             newStr += i
-        println(i)*/
-
-        println(i)
     }
 
-    return newStr;
+    return newStr.toLowerCase()
 
 }
 
