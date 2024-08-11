@@ -1,18 +1,20 @@
 package com.example.android.algorithmsolutions
 
-
 fun longestCommonPrefix(strs: Array<String>): String {
-    var prefix = ""
-    var a = 0
-    while (a < 4) {
-        for (i in strs.indices) {
-            println(strs.get(i).get(a))
+
+    val newStrs = strs.minByOrNull { it.length } ?: ""
+    for (i in newStrs.indices) {
+        var prefix = newStrs[i]
+        for (str in strs) {
+            if (str[i] != prefix) {
+
+                return newStrs.substring(0, i)
+            }
         }
-        a++
+
     }
 
-
-    return prefix
+    return ""
 }
 
 fun main() {

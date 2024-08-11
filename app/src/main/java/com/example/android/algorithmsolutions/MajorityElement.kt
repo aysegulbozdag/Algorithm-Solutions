@@ -6,7 +6,7 @@ fun majorityElement(nums: IntArray): Int {
 }
 
 fun main() {
-    val nums:IntArray = IntArray(9)
+    val nums:IntArray = IntArray(10)
     nums[0] = 1;
     nums[1] = 1;
     nums[2] = 3;
@@ -16,6 +16,7 @@ fun main() {
     nums[6] = 3;
     nums[7] = 3;
     nums[8] = 0;
+    nums[9] = 4;
     majorityElement(nums)
 
 }
